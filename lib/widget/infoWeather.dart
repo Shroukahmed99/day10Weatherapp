@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:weatherapp/bloc/weather_bloc.dart';
 import 'package:weatherapp/bloc/weather_state.dart';
 import 'package:weatherapp/data/git_weather_icons.dart';
+import 'package:weatherapp/widget/sizeBox_custom.dart';
 
 class InfoWeather extends StatelessWidget {
   const InfoWeather({super.key});
@@ -85,6 +86,7 @@ class InfoWeather extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
+                    sizedBoxCustom(),
                     Text(
                       " ${formattedDateTime}",
                       style: const TextStyle(
@@ -92,6 +94,7 @@ class InfoWeather extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
+                    sizedBoxCustom(),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 35),
                       child: Row(

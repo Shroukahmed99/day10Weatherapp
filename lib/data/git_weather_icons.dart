@@ -32,6 +32,7 @@ class getWeatherIcon extends StatelessWidget {
         return Image.asset(
           'assets/images/5.png',
           height: 250,
+          
         );
       case == 800:
         return Image.asset(
